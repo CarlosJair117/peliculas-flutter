@@ -22,7 +22,7 @@ class MovieHorizontal extends StatelessWidget {
      });
 
     return Container(
-      height: _screenSize.height * 0.3,
+      height: _screenSize.height * 0.4,
       child: PageView.builder(
         pageSnapping: false,
         controller: _pageController,
@@ -48,7 +48,7 @@ class MovieHorizontal extends StatelessWidget {
                   image: NetworkImage(pelicula.getPosterImg()),
                   placeholder: AssetImage('assets/no-image.jpg'),
                   fit: BoxFit.cover,
-                  height: 240,
+                  height: 260,
                 ),
               ),
             ),
