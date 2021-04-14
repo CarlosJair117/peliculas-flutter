@@ -72,6 +72,12 @@ class MovieDetailPage extends StatelessWidget {
                     Text(pelicula.voteAverage.toString(), style: Theme.of(context).textTheme.subtitle1),
                   ],
                 ),
+                SizedBox(height: 5),
+                Text('Popularidad:   ${pelicula.popularity.toString()}', style: Theme.of(context).textTheme.subtitle1, overflow: TextOverflow.ellipsis,),
+                SizedBox(height: 5),
+                Text('Lenguaje Original:   ${pelicula.originalLanguage}', style: Theme.of(context).textTheme.subtitle1, overflow: TextOverflow.ellipsis,),
+                SizedBox(height: 5),
+                Text('Fecha de lanzamiento:   ${pelicula.releaseDate}', style: Theme.of(context).textTheme.subtitle1, overflow: TextOverflow.ellipsis,),
               ],
             ),
           )
